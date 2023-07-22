@@ -1,0 +1,73 @@
+# Chinese translations for PACKAGE package
+# PACKAGE 软件包的简体中文翻译.
+# Copyright (C) 2023 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# YouthLin Chen <youthlinchen@outlook.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-22 15:56+0800\n"
+"PO-Revision-Date: 2023-07-21 23:31+0800\n"
+"Last-Translator: YouthLin Chen <youthlinchen@outlook.com>\n"
+"Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: main.go:33
+msgid "[Error] both input file and output file are required.\n"
+msgstr "[错误] 输入文件和输入都是必填的。\n"
+
+#: main.go:39
+msgid "failed to open input file %q: %+v"
+msgstr "打开输入文件 %q 失败: %+v"
+
+#: main.go:44
+msgid "failed to decode input file %q: %+v"
+msgstr "对输入文件 %s 解码失败"
+
+#: main.go:49
+msgid "failed to open output file %q: %+v"
+msgstr "打开输入文件 %q 失败: %+v"
+
+#: main.go:54
+msgid "failed to write output file %q: %+v"
+msgstr "写入输出文件 %q 失败: %+v"
+
+#: main.go:61
+msgid "Silk decoder, Go version, based on v1.0.9 of C version"
+msgstr "Silk 解码器，Go 语言版本，基于 v1.0.9 的 C 语言版本"
+
+#: main.go:62
+msgid "Decode silk v3 file to pcm, by youthlin"
+msgstr "将 silk v3 格式的文件解码为 pcm, 作者：youthlin"
+
+#: main.go:63
+msgid "GitHub: https://github.comyouthlin/silk"
+msgstr "GitHub: https://github.comyouthlin/silk"
+
+#: main.go:65
+#, c-format
+msgid ""
+"Usage: %s -i <input file> -o <output file> [-sampleRate <hz>] [-l <language>]"
+msgstr "用法：%s -i <输入文件> -o <输出文件> [-sampleRate <采样率>] [-l <语言>]"
+
+#: main.go:66
+msgid "  -i <input file>\tBitstream input to decoder"
+msgstr "  -i <输入文件>\t\t要解码的输入文件，silk 格式"
+
+#: main.go:67
+msgid "  -o <output file>\tSpeech output from decoder"
+msgstr "  -o <输出文件>\t\t解码后的 pcm 语音文件"
+
+#: main.go:68
+msgid "  -sampleRate <hz>\tSample rate in Hz, default 24000"
+msgstr "  -sampleRate <采样率>\t单位为赫兹，默认值为 24000"
+
+#: main.go:69
+msgid "  -l <language>\t\tLanguage path(pointer to po file/dir)"
+msgstr "  -l <语言>\t\t指定语言路径(po 文件或文件夹)"

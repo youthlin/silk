@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-22 15:56+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: main.go:33
+msgid "[Error] both input file and output file are required.\n"
+msgstr ""
+
+#: main.go:39
+msgid "failed to open input file %q: %+v"
+msgstr ""
+
+#: main.go:44
+msgid "failed to decode input file %q: %+v"
+msgstr ""
+
+#: main.go:49
+msgid "failed to open output file %q: %+v"
+msgstr ""
+
+#: main.go:54
+msgid "failed to write output file %q: %+v"
+msgstr ""
+
+#: main.go:61
+msgid "Silk decoder, Go version, based on v1.0.9 of C version"
+msgstr ""
+
+#: main.go:62
+msgid "Decode silk v3 file to pcm, by youthlin"
+msgstr ""
+
+#: main.go:63
+msgid "GitHub: https://github.comyouthlin/silk"
+msgstr ""
+
+#: main.go:65
+#, c-format
+msgid ""
+"Usage: %s -i <input file> -o <output file> [-sampleRate <hz>] [-l <language>]"
+msgstr ""
+
+#: main.go:66
+msgid "  -i <input file>\tBitstream input to decoder"
+msgstr ""
+
+#: main.go:67
+msgid "  -o <output file>\tSpeech output from decoder"
+msgstr ""
+
+#: main.go:68
+msgid "  -sampleRate <hz>\tSample rate in Hz, default 24000"
+msgstr ""
+
+#: main.go:69
+msgid "  -l <language>\t\tLanguage path(pointer to po file/dir)"
+msgstr ""
