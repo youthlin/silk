@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-22 15:56+0800\n"
+"POT-Creation-Date: 2023-07-23 15:12+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,56 +17,154 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: main.go:33
-msgid "[Error] both input file and output file are required.\n"
+#: main.go:42
+msgid "[Error] input file are required.\n"
 msgstr ""
 
-#: main.go:39
-msgid "failed to open input file %q: %+v"
+#: main.go:57
+msgid "[Error] input file name pattern %s are invalid: %+v"
 msgstr ""
 
-#: main.go:44
-msgid "failed to decode input file %q: %+v"
+#: main.go:77
+msgid "failed to open input file %q: %w"
 msgstr ""
 
-#: main.go:49
-msgid "failed to open output file %q: %+v"
+#: main.go:83
+msgid "failed to decode input file %q: %w"
 msgstr ""
 
-#: main.go:54
-msgid "failed to write output file %q: %+v"
+#: main.go:92
+msgid "can not create mp3-encoder: %w"
 msgstr ""
 
-#: main.go:61
+#: main.go:96
+msgid "failed to encode input file %q to mp3: %w"
+msgstr ""
+
+#: main.go:106
+msgid "failed to open/create output file %q: %w"
+msgstr ""
+
+#: main.go:113
+msgid "failed to write output file %q: %w"
+msgstr ""
+
+#: main.go:150
 msgid "Silk decoder, Go version, based on v1.0.9 of C version"
 msgstr ""
 
-#: main.go:62
-msgid "Decode silk v3 file to pcm, by youthlin"
+#: main.go:151
+msgid "Decode silk v3 file to pcm or mp3, by youthlin"
 msgstr ""
 
-#: main.go:63
+#: main.go:152
 msgid "GitHub: https://github.comyouthlin/silk"
 msgstr ""
 
-#: main.go:65
+#: main.go:154
 #, c-format
+msgid "Usage: %s -i <input file> [settings]"
+msgstr ""
+
+#: main.go:155
+msgid "  -i <input file>\tInput file or input folder(should with -d settings)"
+msgstr ""
+
+#: main.go:156
+msgid "  [settings]"
+msgstr ""
+
+#: main.go:157
 msgid ""
-"Usage: %s -i <input file> -o <output file> [-sampleRate <hz>] [-l <language>]"
+"    -d <pattern>\tInput is a dir, and use the regexp <pattern> to test input "
+"file"
 msgstr ""
 
-#: main.go:66
-msgid "  -i <input file>\tBitstream input to decoder"
+#: main.go:158
+msgid "    -sampleRate <hz>\tSample rate in Hz, default 24000"
 msgstr ""
 
-#: main.go:67
-msgid "  -o <output file>\tSpeech output from decoder"
+#: main.go:159
+msgid ""
+"    -mp3[=false]\tOutput as mp3 file, default true, set false to output as "
+"pcm file"
 msgstr ""
 
-#: main.go:68
-msgid "  -sampleRate <hz>\tSample rate in Hz, default 24000"
+#: main.go:160
+msgid ""
+"    -o <output file>\tOutput file name, or output file extension name when "
+"input is folder.\n"
+"\t\t\tIf not provide, output name is <input>.mp3 or <input>.pcm(when -"
+"mp3=false)"
 msgstr ""
 
-#: main.go:69
-msgid "  -l <language>\t\tLanguage path(pointer to po file/dir)"
+#: main.go:161
+msgid "    -l <language>\tLanguage path(pointer to po file/dir)"
+msgstr ""
+
+#: main.go:163
+msgid "Example:"
+msgstr ""
+
+#: main.go:164
+#, c-format
+msgctxt "cmd-example"
+msgid ""
+"%s -i a.amr\n"
+"\tdecode a.amr to a.mp3"
+msgstr ""
+
+#: main.go:165
+#, c-format
+msgctxt "cmd-example"
+msgid ""
+"%s -i amr.1\n"
+"\tdecode amr.1 to amr.mp3"
+msgstr ""
+
+#: main.go:166
+#, c-format
+msgctxt "cmd-example"
+msgid ""
+"%s -i file\n"
+"\tdecode file to file.mp3"
+msgstr ""
+
+#: main.go:167
+#, c-format
+msgctxt "cmd-example"
+msgid ""
+"%s -i a.amr -o b.mp3\n"
+"\tdecode a.amr to b.mp3"
+msgstr ""
+
+#: main.go:168
+#, c-format
+msgctxt "cmd-example"
+msgid ""
+"%s -i a.amr -mp3=false\n"
+"\tdecode a.amr to a.pcm"
+msgstr ""
+
+#: main.go:169
+#, c-format
+msgctxt "cmd-example"
+msgid ""
+"%s -i a.amr -mp3=false -o b.pcm\n"
+"\tdecode a.amr to b.pcm"
+msgstr ""
+
+#: main.go:170
+#, c-format
+msgctxt "cmd-example"
+msgid ""
+"%s -i voice -d \".*\\.amr\"\n"
+"\tdecode files in the folder to mp3\n"
+"\t  e.g.: if the voice folder has these files:\n"
+"\t\tvoice/a.amr\n"
+"\t\tvoice/other.txt\n"
+"\t\tvoice/sub/b.amr\n"
+"\t  result:\n"
+"\t\tvoice/a.mp3\n"
+"\t\tvoice/sub/b.mp3"
 msgstr ""

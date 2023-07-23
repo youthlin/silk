@@ -3,7 +3,8 @@ module github.com/youthlin/silk/cmd/silk-decoder
 go 1.20
 
 require (
-	github.com/youthlin/silk v0.0.0-20230722083321-571ca7f570ec
+	github.com/youthlin/go-lame v0.0.1
+	github.com/youthlin/silk v0.0.0-20230722083638-49b58a5b550d
 	github.com/youthlin/t v0.0.7
 )
 
