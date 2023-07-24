@@ -19,6 +19,9 @@ see [API doc](https://pkg.go.dev/github.com/youthlin/silk)
 
 ## Comandline tool 命令行
 ### [silk-decoder](./cmd/silk-decoder/) 解码器
+
+> You may need to run `sudo apt-get install libmp3lame-dev` to get lame lib on Linux
+
 ```
 go install github.com/youthlin/silk/cmd/silk-decoder@latest
 # Execute to see usage

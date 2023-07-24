@@ -1,6 +1,8 @@
 # Silk Decoder
 
 ## Install
+> You may need to run `sudo apt-get install libmp3lame-dev` to get lame lib on Linux
+
 ```
 go install github.com/youthlin/silk/cmd/silk-decoder@latest
 # Execute to see usage
