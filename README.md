@@ -78,7 +78,7 @@ GitHub: https://github.comyouthlin/silk
     -l <语言>           指定语言路径(po 文件或文件夹)
 
 示例：
-$s -i a.amr
+silk-decoder -i a.amr
         将 a.amr 解码为 a.mp3
 silk-decoder -i amr.1
         将 amr.1 解码为 amr.mp3
