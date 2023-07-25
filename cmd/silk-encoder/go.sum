@@ -201,8 +201,8 @@ github.com/xeipuuv/gojsonreference v0.0.0-20180127040603-bd5ef7bd5415/go.mod h1:
 github.com/xeipuuv/gojsonschema v1.2.0/go.mod h1:anYRn/JVcOK2ZgGU+IjEV4nwlhoK5sQluxsYJ78Id3Y=
 github.com/xordataexchange/crypt v0.0.3-0.20170626215501-b2862e3d0a77/go.mod h1:aYKd//L2LvnjZzWKhF00oedf4jCCReLcmhLdhm1A27Q=
 github.com/yalp/jsonpath v0.0.0-20180802001716-5cc68e5049a0/go.mod h1:/LWChgwKmvncFJFHJ7Gvn9wZArjbV5/FppcK2fKk/tI=
-github.com/youthlin/silk v0.0.2 h1:ydS7pmXvUH/r52Gu/JVuJXsqcNlMvauUsjRNGR7ZRE4=
-github.com/youthlin/silk v0.0.2/go.mod h1:5rsiA9UPJoXecMP3KLz6MAZGBNAPzIE13id8isu49/U=
+github.com/youthlin/silk v0.0.3 h1:oFvHbAOyYyGt4Qk/Cicbzhyp9gYZUD0FOg8Ke0U/QSk=
+github.com/youthlin/silk v0.0.3/go.mod h1:5rsiA9UPJoXecMP3KLz6MAZGBNAPzIE13id8isu49/U=
 github.com/youthlin/t v0.0.7 h1:oYejcWiC39ZaMH9tmGpXsqOzNtsn0zg8c38/TKVDYL4=
 github.com/youthlin/t v0.0.7/go.mod h1:RPA24ktxWXP8bN6gmW+QTZmz9cQgYUPFbwmUCs+7+SU=
 github.com/yudai/gojsondiff v1.0.0/go.mod h1:AY32+k2cwILAkW1fbgxQ5mUmMiZFgLIV+FBNExI05xg=

@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/youthlin/go-lame v0.0.1
-	github.com/youthlin/silk v0.0.2
+	github.com/youthlin/silk v0.0.3
 	github.com/youthlin/t v0.0.7
 )
 
