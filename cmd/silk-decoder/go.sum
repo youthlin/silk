@@ -203,8 +203,8 @@ github.com/xordataexchange/crypt v0.0.3-0.20170626215501-b2862e3d0a77/go.mod h1:
 github.com/yalp/jsonpath v0.0.0-20180802001716-5cc68e5049a0/go.mod h1:/LWChgwKmvncFJFHJ7Gvn9wZArjbV5/FppcK2fKk/tI=
 github.com/youthlin/go-lame v0.0.1 h1:Z/lfs2De5vF30CVmfI7O1VZcFD5rWNOrtcUEnyyqSdY=
 github.com/youthlin/go-lame v0.0.1/go.mod h1:fIJcwKtj2FAkTxicayeKty63fCcB2HuP3XIhaNzXqLs=
-github.com/youthlin/silk v0.0.1 h1:rQMg93pzzX0LuTILgdXJ0rJHDUT4+IASyOoAXo50o4A=
-github.com/youthlin/silk v0.0.1/go.mod h1:5rsiA9UPJoXecMP3KLz6MAZGBNAPzIE13id8isu49/U=
+github.com/youthlin/silk v0.0.2 h1:ydS7pmXvUH/r52Gu/JVuJXsqcNlMvauUsjRNGR7ZRE4=
+github.com/youthlin/silk v0.0.2/go.mod h1:5rsiA9UPJoXecMP3KLz6MAZGBNAPzIE13id8isu49/U=
 github.com/youthlin/t v0.0.7 h1:oYejcWiC39ZaMH9tmGpXsqOzNtsn0zg8c38/TKVDYL4=
 github.com/youthlin/t v0.0.7/go.mod h1:RPA24ktxWXP8bN6gmW+QTZmz9cQgYUPFbwmUCs+7+SU=
 github.com/yudai/gojsondiff v1.0.0/go.mod h1:AY32+k2cwILAkW1fbgxQ5mUmMiZFgLIV+FBNExI05xg=
