@@ -1,6 +1,7 @@
 package internal
 
 /*
+#cgo CFLAGS: -Wno-shift-negative-value
 #include "SKP_Silk_SDK_API.h"
 #include <stdlib.h>
 */

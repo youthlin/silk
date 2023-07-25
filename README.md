@@ -14,6 +14,14 @@ go get -u github.com/youthlin/silk
 ```
 func Decode(src io.Reader, opts ...internal.DecodeOpt) ([]byte, error)
 func Encode(src io.Reader, opts ...internal.EncodeOpt) ([]byte, error)
+
+// Decode Options 解码选项
+
+// WithSampleRate set decode option, sample rate, default 24000
+// 设置 sample rate 参数，默认值 24000
+func WithSampleRate(sampleRate int) internal.DecodeOpt {
+	return func(dc *internal.DecodeCfg) { dc.SampleRate = sampleRate }
+}
 ```
 see [API doc](https://pkg.go.dev/github.com/youthlin/silk)
 
