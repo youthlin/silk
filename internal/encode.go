@@ -10,6 +10,7 @@ import "C"
 import (
 	"bytes"
 	"encoding/binary"
+	"errors"
 	"fmt"
 	"io"
 	"unsafe"
@@ -148,16 +149,12 @@ func doEncode(reader io.Reader, out io.Writer, cfg *EncodeCfg, psEnc unsafe.Poin
 
 		// 读取一段数据
 		n, err := io.ReadFull(reader, in)
-		if err != nil {
-			if err == io.EOF {
-				err = nil
-				log("block=%d, EOF when read data", blockIndex)
-				break
-			}
-			warn("block=%d, read data err: %+v", blockIndex, err)
-			return fmt.Errorf("failed to read src file: %w", err)
+		log("block=%d, read n=%d, err=%+v", blockIndex, n, err)
+		if errors.Is(err, io.EOF) {
+			err = nil
+			log("block=%d, EOF when read data", blockIndex)
+			break
 		}
-		log("block=%d, read n=%d, data=%x", blockIndex, n, in[:n])
 		if n < frameSize {
 			break
 		}
@@ -184,7 +181,11 @@ func doEncode(reader io.Reader, out io.Writer, cfg *EncodeCfg, psEnc unsafe.Poin
 			(*C.SKP_int16)(unsafe.Pointer(&nBytes)),     // 接收 encode 后的长度
 		)
 		log("encode ret code=%d, encode payload size=%d, data=%x", ret, nBytes, payload[:nBytes])
-		
+		if ret != 0 {
+			warn("encode failed, ret=%d", ret)
+			continue // or break?
+		}
+
 		// 写入编码后的长度、内容
 		err = binary.Write(out, binary.LittleEndian, nBytes)
 		if err != nil {

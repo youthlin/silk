@@ -13,6 +13,7 @@ import (
 
 	"github.com/youthlin/go-lame"
 	"github.com/youthlin/silk"
+	"github.com/youthlin/silk/internal"
 	"github.com/youthlin/t"
 )
 
@@ -23,6 +24,7 @@ var (
 	dir        = flag.String("d", "", "")
 	sampleRate = flag.Int("sampleRate", 24000, "")
 	mp3        = flag.Bool("mp3", true, "")
+	verboe     = flag.Bool("verbose", false, "")
 	output     = flag.String("o", "", "")
 	lang       = flag.String("l", "", "")
 	pattern    *regexp.Regexp
@@ -35,6 +37,9 @@ func main() {
 		t.LoadFS(poFiles)
 	} else {
 		t.Load(*lang)
+	}
+	if *verboe {
+		internal.Verbose = true
 	}
 
 	if *input == "" {
@@ -161,6 +166,7 @@ func printUsage() {
 	fmt.Println(t.T("    -mp3[=false]\tOutput as mp3 file, default true, set false to output as pcm file"))
 	fmt.Println(t.T("    -o <output file>\tOutput file name, or output file extension name when input is folder.\n\t\t\tIf not provide, output name is <input>.mp3 or <input>.pcm(when -mp3=false)"))
 	fmt.Println(t.T("    -l <language>\tLanguage path(pointer to po file/dir)"))
+	fmt.Println(t.T("    -verbose\t\tprint verbose log(default false)"))
 	fmt.Println()
 	fmt.Println(t.T("Example:"))
 	fmt.Println(t.X("cmd-example", "%s -i a.amr\n\tdecode a.amr to a.mp3", name))

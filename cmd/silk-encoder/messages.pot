@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-22 16:09+0800\n"
+"POT-Creation-Date: 2024-05-08 15:07+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,98 +17,102 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: main.go:22
+#: main.go:23
 msgid "[Error] both input file and output file are required.\n"
 msgstr ""
 
-#: main.go:28
+#: main.go:29
 msgid "failed to open input file %q: %+v"
 msgstr ""
 
-#: main.go:45
+#: main.go:46
 msgid "failed to encode input file %q: %+v"
 msgstr ""
 
-#: main.go:51
+#: main.go:52
 msgid "failed to open output file %q: %+v"
 msgstr ""
 
-#: main.go:56
+#: main.go:57
 msgid "failed to write output file %q: %+v"
 msgstr ""
 
-#: main.go:103
+#: main.go:107
 msgid "Silk encoder, Go version, based on v1.0.9 of C version"
 msgstr ""
 
-#: main.go:104
+#: main.go:108
 msgid "Encode pcm file to silk v3 type, by youthlin"
 msgstr ""
 
-#: main.go:105
+#: main.go:109
 msgid "GitHub: https://github.comyouthlin/silk"
 msgstr ""
 
-#: main.go:107
+#: main.go:111
 #, c-format
 msgid "Usage: %s [settings]"
 msgstr ""
 
-#: main.go:108
+#: main.go:112
 msgid "  [settings]"
 msgstr ""
 
-#: main.go:109
+#: main.go:113
 msgid "    -l <path to po file>\tlanguage path(pointer to po file/dir)"
 msgstr ""
 
-#: main.go:110
+#: main.go:114
 msgid "    -i <input file>\t\tSpeech input to encoder"
 msgstr ""
 
-#: main.go:111
+#: main.go:115
 msgid "    -o <output file>\t\tBitstream output from encoder"
 msgstr ""
 
-#: main.go:112
+#: main.go:116
 msgid "    -Fs_API <Hz>\t\tAPI sampling rate in Hz, default: 24000"
 msgstr ""
 
-#: main.go:113
+#: main.go:117
 msgid ""
 "    -Fs_maxInternal <Hz>\tMaximum internal sampling rate in Hz, default: "
 "24000"
 msgstr ""
 
-#: main.go:114
+#: main.go:118
 msgid "    -packetlength <ms>\t\tPacket interval in ms, default: 20"
 msgstr ""
 
-#: main.go:115
+#: main.go:119
 msgid "    -rate <bps>\t\t\tTarget bitrate; default: 25000"
 msgstr ""
 
-#: main.go:116
+#: main.go:120
 msgid ""
 "    -loss <perc>\t\tUplink loss estimate, in percent (0-100); default: 0"
 msgstr ""
 
-#: main.go:117
+#: main.go:121
 msgid "    -inbandFEC[=false]\t\tEnable inband FEC usage, default: false"
 msgstr ""
 
-#: main.go:118
+#: main.go:122
 msgid ""
 "    -complexity <comp>\t\tSet complexity, 0: low, 1: medium, 2: high; "
 "default: 2"
 msgstr ""
 
-#: main.go:119
-msgid "    -DTX[=false]\t\tEnable DTX; default: false"
+#: main.go:123
+msgid "    -DTX\t\t\tEnable DTX; default: false"
 msgstr ""
 
-#: main.go:120
+#: main.go:124
 msgid ""
 "    -stx[=false]\t\tAdd STX flag before file header and remove footer block, "
 "default true"
+msgstr ""
+
+#: main.go:125
+msgid "    -verbose\t\t\tprint verbose log, default false"
 msgstr ""
