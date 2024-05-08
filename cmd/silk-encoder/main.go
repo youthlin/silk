@@ -7,6 +7,7 @@ import (
 	"os"
 
 	"github.com/youthlin/silk"
+	"github.com/youthlin/silk/internal"
 	"github.com/youthlin/t"
 )
 
@@ -71,6 +72,7 @@ type appArgs struct {
 	InbandFEC     bool
 	DTX           bool
 	STX           bool
+	Verbose       bool
 }
 
 func i18n() {
@@ -94,8 +96,10 @@ func parseArgs() {
 	flag.IntVar(&args.Complexity, "complexity", 2, "")
 	flag.BoolVar(&args.DTX, "DTX", false, "")
 	flag.BoolVar(&args.STX, "STX", true, "")
+	flag.BoolVar(&args.Verbose, "verbose", false, "")
 	flag.Usage = printUsage
 	flag.Parse()
+	internal.Verbose = args.Verbose
 }
 
 func printUsage() {
@@ -116,7 +120,8 @@ func printUsage() {
 	fmt.Println(t.T("    -loss <perc>\t\tUplink loss estimate, in percent (0-100); default: 0"))
 	fmt.Println(t.T("    -inbandFEC[=false]\t\tEnable inband FEC usage, default: false"))
 	fmt.Println(t.T("    -complexity <comp>\t\tSet complexity, 0: low, 1: medium, 2: high; default: 2"))
-	fmt.Println(t.T("    -DTX[=false]\t\tEnable DTX; default: false"))
+	fmt.Println(t.T("    -DTX\t\t\tEnable DTX; default: false"))
 	fmt.Println(t.T("    -stx[=false]\t\tAdd STX flag before file header and remove footer block, default true"))
+	fmt.Println(t.T("    -verbose\t\t\tprint verbose log, default false"))
 	fmt.Println()
 }

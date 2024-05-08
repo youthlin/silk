@@ -214,7 +214,6 @@ func doDecode(reader io.Reader, psDec unsafe.Pointer, sampleRate int, out io.Wri
 			log("packet=%d, read block data invalid, read %d bytes, expected %d", blockIndex, n, nByte)
 			return fmt.Errorf("invalid block")
 		}
-		log("packet=%d, block size=%d, read bytes=%d data=%x", blockIndex, nByte, n, in[:nByte])
 
 		// 解码
 		C.SKP_Silk_SDK_Decode(

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-23 15:12+0800\n"
+"POT-Creation-Date: 2024-05-08 15:04+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,80 +17,80 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: main.go:42
+#: main.go:47
 msgid "[Error] input file are required.\n"
 msgstr ""
 
-#: main.go:57
+#: main.go:62
 msgid "[Error] input file name pattern %s are invalid: %+v"
 msgstr ""
 
-#: main.go:77
+#: main.go:82
 msgid "failed to open input file %q: %w"
 msgstr ""
 
-#: main.go:83
+#: main.go:88
 msgid "failed to decode input file %q: %w"
 msgstr ""
 
-#: main.go:92
+#: main.go:97
 msgid "can not create mp3-encoder: %w"
 msgstr ""
 
-#: main.go:96
+#: main.go:103
 msgid "failed to encode input file %q to mp3: %w"
 msgstr ""
 
-#: main.go:106
+#: main.go:113
 msgid "failed to open/create output file %q: %w"
 msgstr ""
 
-#: main.go:113
+#: main.go:120
 msgid "failed to write output file %q: %w"
 msgstr ""
 
-#: main.go:150
+#: main.go:157
 msgid "Silk decoder, Go version, based on v1.0.9 of C version"
 msgstr ""
 
-#: main.go:151
+#: main.go:158
 msgid "Decode silk v3 file to pcm or mp3, by youthlin"
 msgstr ""
 
-#: main.go:152
+#: main.go:159
 msgid "GitHub: https://github.comyouthlin/silk"
 msgstr ""
 
-#: main.go:154
+#: main.go:161
 #, c-format
 msgid "Usage: %s -i <input file> [settings]"
 msgstr ""
 
-#: main.go:155
+#: main.go:162
 msgid "  -i <input file>\tInput file or input folder(should with -d settings)"
 msgstr ""
 
-#: main.go:156
+#: main.go:163
 msgid "  [settings]"
 msgstr ""
 
-#: main.go:157
+#: main.go:164
 msgid ""
 "    -d <pattern>\tInput is a dir, and use the regexp <pattern> to test input "
 "file"
 msgstr ""
 
-#: main.go:158
+#: main.go:165
 msgid "    -sampleRate <hz>\tSample rate in Hz, default 24000"
 msgstr ""
 
-#: main.go:159
+#: main.go:166
 msgid ""
 "    -mp3[=false]\tOutput as mp3 file, default true, set false to output as "
 "pcm file"
 msgstr ""
 
-#: main.go:160
+#: main.go:167
 msgid ""
 "    -o <output file>\tOutput file name, or output file extension name when "
 "input is folder.\n"
@@ -98,15 +98,19 @@ msgid ""
 "mp3=false)"
 msgstr ""
 
-#: main.go:161
+#: main.go:168
 msgid "    -l <language>\tLanguage path(pointer to po file/dir)"
 msgstr ""
 
-#: main.go:163
+#: main.go:169
+msgid "    -verbose\t\tprint verbose log(default false)"
+msgstr ""
+
+#: main.go:171
 msgid "Example:"
 msgstr ""
 
-#: main.go:164
+#: main.go:172
 #, c-format
 msgctxt "cmd-example"
 msgid ""
@@ -114,7 +118,7 @@ msgid ""
 "\tdecode a.amr to a.mp3"
 msgstr ""
 
-#: main.go:165
+#: main.go:173
 #, c-format
 msgctxt "cmd-example"
 msgid ""
@@ -122,7 +126,7 @@ msgid ""
 "\tdecode amr.1 to amr.mp3"
 msgstr ""
 
-#: main.go:166
+#: main.go:174
 #, c-format
 msgctxt "cmd-example"
 msgid ""
@@ -130,7 +134,7 @@ msgid ""
 "\tdecode file to file.mp3"
 msgstr ""
 
-#: main.go:167
+#: main.go:175
 #, c-format
 msgctxt "cmd-example"
 msgid ""
@@ -138,7 +142,7 @@ msgid ""
 "\tdecode a.amr to b.mp3"
 msgstr ""
 
-#: main.go:168
+#: main.go:176
 #, c-format
 msgctxt "cmd-example"
 msgid ""
@@ -146,7 +150,7 @@ msgid ""
 "\tdecode a.amr to a.pcm"
 msgstr ""
 
-#: main.go:169
+#: main.go:177
 #, c-format
 msgctxt "cmd-example"
 msgid ""
@@ -154,7 +158,7 @@ msgid ""
 "\tdecode a.amr to b.pcm"
 msgstr ""
 
-#: main.go:170
+#: main.go:178
 #, c-format
 msgctxt "cmd-example"
 msgid ""

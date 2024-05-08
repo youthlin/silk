@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: silk-encoder v0.0.2\n"
-"Report-Msgid-Bugs-To: https://github.com/youthlin/silk/issues\n"
-"POT-Creation-Date: 2023-07-22 16:09+0800\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-08 15:07+0800\n"
 "PO-Revision-Date: 2023-07-21 21:55+0800\n"
 "Last-Translator: YouthLin Chen <youthlinchen@outlook.com>\n"
 "Language-Team: Chinese (simplified) <youthlinchen@outlook.com>\n"
@@ -18,100 +18,105 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: main.go:22
+#: main.go:23
 msgid "[Error] both input file and output file are required.\n"
 msgstr "[错误] 输入文件和输出文件都是必填的。\n"
 
-#: main.go:28
+#: main.go:29
 msgid "failed to open input file %q: %+v"
 msgstr "打开输入文件 %q 失败: %+v"
 
-#: main.go:45
+#: main.go:46
 msgid "failed to encode input file %q: %+v"
 msgstr "对输入文件 %q 编码失败: %+v"
 
-#: main.go:51
+#: main.go:52
 msgid "failed to open output file %q: %+v"
 msgstr "打开输出文件 %q 失败: %+v"
 
-#: main.go:56
+#: main.go:57
 msgid "failed to write output file %q: %+v"
 msgstr "写入输出文件 %q 失败: %+v"
 
-#: main.go:103
+#: main.go:107
 msgid "Silk encoder, Go version, based on v1.0.9 of C version"
 msgstr "Silk 编码器，Go 语言版本，基于 v1.0.9 的 C 语言版本"
 
-#: main.go:104
+#: main.go:108
 msgid "Encode pcm file to silk v3 type, by youthlin"
 msgstr "将 pcm 文件编码为 silk v3 类型，作者： youthlin"
 
-#: main.go:105
+#: main.go:109
 msgid "GitHub: https://github.comyouthlin/silk"
 msgstr "GitHub: https://github.comyouthlin/silk"
 
-#: main.go:107
+#: main.go:111
 #, c-format
 msgid "Usage: %s [settings]"
 msgstr "用法: %s [选项]"
 
-#: main.go:108
+#: main.go:112
 msgid "  [settings]"
 msgstr "  [选项]"
 
-#: main.go:109
+#: main.go:113
 msgid "    -l <path to po file>\tlanguage path(pointer to po file/dir)"
 msgstr "    -l <语言路径>\t\t指向 po/mo 文件或所在文件夹"
 
-#: main.go:110
+#: main.go:114
 msgid "    -i <input file>\t\tSpeech input to encoder"
 msgstr "    -i <输入文件>\t\t待编码的输入语音文件"
 
-#: main.go:111
+#: main.go:115
 msgid "    -o <output file>\t\tBitstream output from encoder"
 msgstr "    -o <输出文件>\t\t编码后的文件"
 
-#: main.go:112
+#: main.go:116
 msgid "    -Fs_API <Hz>\t\tAPI sampling rate in Hz, default: 24000"
 msgstr "    -Fs_API <采样率>\t\t单位赫兹(Hz), 默认值为 24000"
 
-#: main.go:113
+#: main.go:117
 msgid ""
 "    -Fs_maxInternal <Hz>\tMaximum internal sampling rate in Hz, default: "
 "24000"
 msgstr "    -Fs_maxInternal <赫兹>\t最大采样率，单位赫兹(Hz), 默认值为 24000"
 
-#: main.go:114
+#: main.go:118
 msgid "    -packetlength <ms>\t\tPacket interval in ms, default: 20"
 msgstr "    -packetlength <毫秒>\t数据包长度，单位毫秒(ms), 默认值为 20"
 
-#: main.go:115
+#: main.go:119
 msgid "    -rate <bps>\t\t\tTarget bitrate; default: 25000"
 msgstr "    -rate <比特率>\t\t比特率，默认值为 25000"
 
-#: main.go:116
+#: main.go:120
 msgid ""
 "    -loss <perc>\t\tUplink loss estimate, in percent (0-100); default: 0"
 msgstr "    -loss <损耗比>\t\t上行链路预计损耗比例，取值(0-100), 默认值为 0"
 
-#: main.go:117
+#: main.go:121
 msgid "    -inbandFEC[=false]\t\tEnable inband FEC usage, default: false"
 msgstr "    -inbandFEC[=false]\t\t开启音频带内 FEC(前向纠错), 默认值为 false"
 
-#: main.go:118
+#: main.go:122
 msgid ""
 "    -complexity <comp>\t\tSet complexity, 0: low, 1: medium, 2: high; "
 "default: 2"
 msgstr "    -complexity <模式>\t\t设置复杂模式, 0=低，1=中，2=高，默认值为 2"
 
-#: main.go:119
-msgid "    -DTX[=false]\t\tEnable DTX; default: false"
+#: main.go:123
+msgid "    -DTX\t\t\tEnable DTX; default: false"
 msgstr "    -DTX[=false]\t\t开启 DTX, 默认值为 false"
 
-#: main.go:120
+#: main.go:124
 msgid ""
 "    -stx[=false]\t\tAdd STX flag before file header and remove footer block, "
 "default true"
 msgstr ""
-"    -stx[=false]\t\t在文件头之前添加 STX 标记，并移除 footer 块(兼容国内通信软件语"
-"音格式), 默认值为 true"
+"    -stx[=false]\t\t在文件头之前添加 STX 标记，并移除 footer 块(兼容国内通信"
+"软件语音格式), 默认值为 true"
+
+#: main.go:125
+#, fuzzy
+msgid "    -verbose\t\t\tprint verbose log, default false"
+msgstr "    -verbose\t\t\t输出调试日志, 默认值为 false"
