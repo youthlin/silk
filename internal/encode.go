@@ -1,7 +1,7 @@
 package internal
 
 /*
-#cgo CFLAGS: -Wno-shift-negative-value -Wno-constant-conversion
+#cgo CFLAGS: -Wno-shift-negative-value -Wno-constant-conversion -Wno-stringop-overread
 #include "SKP_Silk_SDK_API.h"
 #include <stdlib.h>
 */
